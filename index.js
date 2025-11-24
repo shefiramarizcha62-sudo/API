@@ -38,4 +38,5 @@ app.get("/layanan", (req, res) => {
 });
 
 // Jalankan server
-app.listen(3000, () => console.log("API ready: http://localhost:3000/layanan"));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`API running on port ${PORT}`));
